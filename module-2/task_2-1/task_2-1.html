@@ -5,6 +5,20 @@
   <title>Submission 2.1</title>
 </head>
 <body>
+<p> Can we create variables and constants without assigning values to them? If not, why, and which ones (variables, constants, or both)?</p>
+<p>- A variable creates a container where a value may be declared right away or for a location where the value may be changed later on.</p>
+<p>- Having a constant without assigning a value defies its purpose, as the purpose for a constant is to never change the value assigned.</p>
+<p>Can we create variables and constants on the same line, or must we separate them onto different lines? If we can, how do we differentiate them?
+- As long it’s declared correctly. Different languages may execute it differently with the variable frist and constant second.. However, the best practice says to separate it on different lines.
+<p> Can we assign a new value to a constant later in the code? Try to explain why we can or cannot.
+- No, as a «true constant» locks in the value. A const is defined as an identifier whose associated value is fixed for the prog.execution / scope.
+<br>
+What happens if we create a variable without using the let or const commands? Now, add "use strict" to the very top of your script. Describe what you observe in the browser's "Inspect" window. You can learn more about "use strict" on W3Schools.
+- If I declare a value as ‘x = 10’, the code runs fine. With «use strict», I produce «ReferenceError: Can’t find variable: x». This happens because JS requires all variables to be properly declared
+<br>
+What are implicit and explicit variable declarations?
+- Implicit variable declaration is if you let the language figure a variable’s type, explicit is the opposite, where you directly state it. 
+</p>
 <script>
   /* write your code below this line  🙂 */
 const PI = 3.14;
