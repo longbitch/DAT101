@@ -12,31 +12,31 @@
     <ol>
       <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
-				[Replace this with you answer]
+				Values for constants should be used where the value won’t change after they’ve been set. Variables are good for creating containers as well as for changing values later on. Examples for constants could be PI and seconds per minute, and form fields or temporary results for variables. To answer the last question: no, because variables and constants have its own purpose. You want to be able to create a container / change a variable’s value, but not change the value assigned to a constant.]
 			</p>
       <li>How do parentheses affect the arithmetic outcome of an expression?</li>
       <p>
-				[Replace this with you answer]
+				Parentheses change which part of an expression are calculated first, therefore it may completely change the final numeric result.
 			</p>
       <li>How do we limit floating-point numbers to a given number of decimals?</li>
       <p>
-				[Replace this with you answer]
+				- We can use ‘toFixed()’ as in ‘Number.prototype.toFixed()’ in JavaScript. The given number in parenthesis rounds the number to n decimal places. This method however returns a string instead of a number.
 			</p>
       <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
       <p>
-				[Replace this with you answer]
+				- Direct equality (12.99999 === 12.2) can output ‘false’ even if it’s mathematically equal. Instead we can use an epsilon to compare the absolute difference to a small tolerance, for example by using ‘Number.EPSILON’.
 			</p>
       <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
       <p>
-				[Replace this with you answer]
+				Comparison operators return boolean values of ‘true’ or ‘false’. It’s possible to check for this by using an if-statement.
 			</p>
       <li>How does the Math.random() function work, and what can it be used for?</li>
       <p>
-				[Replace this with you answer]
+				The function generates a pseudo-random floating-point number between 0 and 1. It can be used for example in random positions in a game or producing random colors.
 			</p>
       <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
       <p>
-				[Replace this with you answer]
+        - The modulus operator returns the remainder after dividing one number by another. We use this when we need remainders or cycles, for instance in 24h clock -> 12h clock (hours % 12) or for checking even/odd numbers (num % 2 === 0) / (=== 1) 
 			</p>
     </ol>
 		<script type="module" src="./task_2-2.mjs" defer></script>
