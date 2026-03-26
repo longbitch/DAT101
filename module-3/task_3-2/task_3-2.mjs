@@ -1,6 +1,5 @@
 "use strict";
-import { initPrintOut, printOut, newLine, NEWLine } from "../../common/script/utils.mjs";
-initPrintOut(document.getElementById("txtOut"));
+import { printOut, newLine } from "../../common/script/utils.mjs";
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
 
@@ -304,20 +303,4 @@ const equals6 = (diceCount.match(/6/g) || "").length;
 printOut("Equals 1: " + equals1.toString());
 printOut("equals 6: " + equals6.toString());
 
-printOut(newLine);
-
-printOut("--- Part 8 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
-
-printOut("--- Part 9 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
-
-/* Task 10*/
-printOut("--- Part 10 ---------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
 printOut(newLine);
