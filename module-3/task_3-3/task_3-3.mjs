@@ -1,6 +1,5 @@
 "use strict";
-import { initPrintOut, printOut, newLine } from "../../common/script/utils.mjs";
-initPrintOut(document.getElementById("txtOut"));
+import { printOut, newLine } from "../../common/script/utils.mjs";
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
 /*Create a function that takes no parameters and returns no values. Have it print today's date in the
