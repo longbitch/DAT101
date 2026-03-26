@@ -1,6 +1,5 @@
 "use strict";
-import { initPrintOut, printOut, newLine } from "../../common/script/utils.mjs";
-initPrintOut(document.getElementById("txtOut"));
+import { printOut, newLine } from "../../common/script/utils.mjs";
 
 printOut("--- Part 1, 2, 3 ----------------------------------------------------------------------------------------");
 /* Part 1: If I wake up at

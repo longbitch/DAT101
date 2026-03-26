@@ -6,8 +6,8 @@
   </head>
   <body style="display: table-cell; vertical-align: middle">
     <h2><label for="txtOut">Output from Task 3.1:</label></h2>
-    <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
-      <span id="txtOut" style="white-space: nowrap"></span>
+    <div id="txtOut" style="white-space: pre-wrap; padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif"></div>
+      <div id="txtOut" style="white-space: pre-wrap;"></div>
     </div>
     <ol>
       <li>Discuss the behavior of part 1, What happens when the wake-up time is not 7 and what happens when it is exactly 7?</li>
@@ -22,6 +22,6 @@
       <li>Discuss the behavior for part 4, what happens if the number is exactly 0, is zero positive or negative?</li>
       <p>In the program we are asking it to sort numbers like this "if number > 0, sort it as positive, if not it is negative". And since 0 is not bigger than 0 it will be told it is negative.   </p>
     </ol>
-    <script type="module" src="./task_3-1.mjs" defer></script>
+    <script type="module" src="./task_3-1.mjs"></script>
   </body>
 </html>
