@@ -50,6 +50,11 @@ export class TObstacle{
   }
 
   
+  setDayNight(aIsDay) {
+    this.#spDown.index = aIsDay ? 2 : 0;
+    this.#spUp.index = aIsDay ? 3 : 1;
+  }
+
   animate(){
     this.#spDown.x--;
     this.#spUp.x--;

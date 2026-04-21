@@ -50,6 +50,7 @@ export class THero extends TSprite {
       } else {
         EGameStatus.state = EGameStatus.gameOver;
         menu.stopSound();
+        menu.showGameOver();
         this.animationSpeed = 0;
         this.#sfGameOver = new TSoundFile(fnGameOver);
         this.#sfGameOver.play();
@@ -67,5 +68,14 @@ export class THero extends TSprite {
   flap() {
     this.#speed = -3.5;
     this.rotation = 0;
+  }
+
+  restart() {
+    this.x = 100;
+    this.y = 20;
+    this.#speed = 0;
+    this.rotation = 0;
+    this.animationSpeed = 20;
+    this.#wave = new TSineWave(1, 1);
   }
 }
